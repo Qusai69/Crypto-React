@@ -1,0 +1,75 @@
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: calc(100% - 10px); /* Adjust width as needed */
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  color: white;
+  background-color: #26272b;
+  box-shadow: 0px 0px 12px #18191b;
+  border: none;
+  outline: none;
+  border-radius: 8px 0 0 8px; /* Rounded border on left */
+}
+
+.input-container .icon-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40px; /* Adjust width to match button size */
+  background-color: #26272b;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0; /* Rounded border on right */
+}
+
+.input-container .icon-button svg {
+  color: white;
+  font-size: 1rem; /* Adjust icon size */
+  margin: auto;
+}
+
+.input-container input::placeholder {
+  color: #9b9b9b; /* Placeholder color */
+}
+
+.search-container {
+  position: relative;
+  margin-bottom: 1rem; /* Adjust margin as needed */
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust icon position from left */
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #9b9b9b; /* Adjust icon color */
+}
+
+.search-icon svg {
+  font-size: 1rem; /* Adjust icon size */
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 0.7rem 1rem 0.7rem 2.5rem; /* Adjust padding to accommodate icon */
+  font-weight: 700;
+  color: #26272b;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+}
+
+input[type="search"]:focus {
+  border-color: #5f5fd9; /* Adjust focus border color */
+}
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
